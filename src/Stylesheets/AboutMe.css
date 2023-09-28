@@ -1,0 +1,16 @@
+.profile-pic{
+    margin: 0 auto;
+}
+
+.social-media > a > img {
+    filter: grayscale(1);
+    transform: scale(0.97);
+}
+
+.social-media > a > img:hover{
+    transform: scale(1);
+    filter: grayscale(0);
+    transition-property: transform filter;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }

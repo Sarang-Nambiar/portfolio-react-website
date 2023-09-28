@@ -1,0 +1,18 @@
+.btn-primary{
+    background-color: white !important;
+    color: black !important;    
+    border-color: black !important;
+    border-width: 2px 2px 6px 2px !important;
+    box-shadow: none !important;
+    border-radius: 8px;
+    padding: 0.5rem 2rem ;
+}
+
+.btn-primary:active{
+    border: 2px solid black !important;
+    margin-bottom: 4px !important;
+}
+
+.toast-position{
+    top: 70px !important;
+}

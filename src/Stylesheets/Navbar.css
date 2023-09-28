@@ -1,0 +1,4 @@
+#navbar{
+    transition: .3s ease-in-out;
+    z-index: 100;
+}
