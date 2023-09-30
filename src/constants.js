@@ -1,6 +1,13 @@
 import github_logo from "./assets/icons8-github-48 (1).png";
 import linkedin_logo from "./assets/icons8-linkedin-48.png"
 import flickr_logo from "./assets/flickr-icon.svg"
+import portfolio from "./assets/portfolio_website.png"
+import hotel_booking from "./assets/hotel_booking_website.png"
+import seq_model from "./assets/seq_model.png"
+import empathy_game from "./assets/the-little-things-in-life.png"
+import travel_planner from "./assets/genai_planner.png"
+import occupeye from "./assets/OccupEYE.png"
+import cookit from "./assets/cookit.png"
 
 const aboutme = `<p>
 Hi there! I'm a <strong>third-year engineering student</strong> who really loves technology.
@@ -42,6 +49,15 @@ const logos = [
 ];
 
 const projects = [{
+  name: "Portfolio Website",
+  description: `I created this website to showcase my skills and projects. I used <strong>React</strong> to build this website, and <strong>Tailwind CSS</strong> to style it.`,
+  img: portfolio,
+  alt: "project 3",
+  stack: ["React", "Tailwind", "HTML", "CSS", "JavaScript", "Material UI"],
+  date: "Sep 2023",
+  link: "https://github.com/Sarang-Nambiar/sarangnambiar.github.io"
+},
+{
   name: "Hotel Booking Website - Ascenda",
   description: `For our term project in the "Elements of Software Construction" course, 
   we <strong>collaborated with Ascenda</strong> to create a hotel booking website. 
@@ -50,7 +66,7 @@ const projects = [{
   The backend operations were powered by Express.js, which handled requests from Ascenda's proprietary API. To ensure user information security, 
   we stored data on a Firebase database. Additionally, we incorporated Stripe's API to facilitate payment services for our users.
   To ensure the website's functionality, we employed Selenium to perform automated testing.`,
-  img: "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?cs=srgb&dl=pexels-pixabay-147411.jpg&fm=jpg",
+  img: hotel_booking,
   alt: "project 1",
   stack: ["React", "Tailwind", "Material UI", "Express.js", "Firebase", "Stripe", "Selenium", "Figma", "HTML", "CSS"],
   date: "Jun 2023 - Aug 2023",
@@ -62,7 +78,7 @@ const projects = [{
   Each token in the dataset is paired with a tag, such as "B-positive" indicating the beginning of a positive sentiment entity, 
   while "O" represents tokens outside any sentiment entity. Other labels include indications for negative and neutral sentiments. 
   The objective is to create a sequence labeling system that can effectively ascertain sentiments in various texts.`,
-  img: "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?cs=srgb&dl=pexels-pixabay-147411.jpg&fm=jpg",
+  img: seq_model,
   alt: "project 3",
   stack: ["Python", "Machine Learning"],
   date: "Jul 2023 - Aug 2023",
@@ -76,7 +92,7 @@ const projects = [{
   life's modest blessings. As players delve deeper into the boy's world, they
   embark on an emotional journey that fosters a deeper appreciation for the small
   wonders that can profoundly impact lives. My team and I used <strong>React</strong> to build this game.`,
-  img: "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?cs=srgb&dl=pexels-pixabay-147411.jpg&fm=jpg",
+  img: empathy_game,
   alt: "project 3",
   stack: ["React", "HTML", "CSS", "JavaScript"],
   date: "Jul 2023 - Aug 2023",
@@ -87,8 +103,7 @@ const projects = [{
   description: `An innovative travel planner Web-App that utilizes <strong>generative AI</strong> technology to generate personalized itineraries that cater to your specific preferences. 
   By simply answering a few questions, our intelligent algorithm generates multiple customized plans. Our developed app for Singapore Airlines in the Singapore Airlines AppChallenge 2023, 
   provides a convenient and enjoyable planning experience, ensuring an unforgettable journey.`,
-  img: "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?cs=srgb&dl=pexels-pixabay-147411.jpg&fm=jpg",
-  alt: "project 2",
+  img: travel_planner,
   stack: ["React", "HTML", "CSS", "Typescript", "JavaScript", "ChatGPT API", "Formik"],
   date: "Jun 2023",
   link: "https://github.com/Sarang-Nambiar/binarybros.github.io"
@@ -103,7 +118,7 @@ const projects = [{
   <br>
   <br>
   Our solution received great feedback, and we were honored to be one of the three teams whose projects were <strong>recognized as Outstanding 1D Project Exhibit</strong> as voted by the audience!`,
-  img: "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?cs=srgb&dl=pexels-pixabay-147411.jpg&fm=jpg",
+  img: occupeye,
   alt: "project 3",
   stack: ["Android Studio", "Java", "Figma", "Firebase", "Computer Vision", "YOLOv5", "Python"],
   date: "Mar 2023 - Apr 2023",
@@ -115,7 +130,7 @@ const projects = [{
   description: `At the TikTok Youth Camp, my team and I developed an application 
   unctionality of the app using Java within Android Studio, while the Spoonacular REST API 
   served as our source for recipe data. Our project was <strong>distinguished as one of the top entries</strong> in its category.`,
-  img: "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?cs=srgb&dl=pexels-pixabay-147411.jpg&fm=jpg",
+  img: cookit,
   alt: "project 3",
   stack: ["Android Studio", "Java", "Spoonacular API", "Figma"],
   date: "May 2022",

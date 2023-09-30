@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.dbac7405.css",
-    "main.js": "/react-gh-pages/static/js/main.94c15666.js",
-    "static/js/787.b52f403a.chunk.js": "/react-gh-pages/static/js/787.b52f403a.chunk.js",
-    "static/media/background.jpg": "/react-gh-pages/static/media/background.8ad5249c15c68a5ed634.jpg",
-    "static/media/aboutme_pic.jpg": "/react-gh-pages/static/media/aboutme_pic.0604a241828f1be534bb.jpg",
-    "static/media/flickr-icon.svg": "/react-gh-pages/static/media/flickr-icon.5c97742ec96c813125a01509eabb65bb.svg",
-    "index.html": "/react-gh-pages/index.html",
-    "static/media/YouTube-Icon-Full-Color-Logo.wine.svg": "/react-gh-pages/static/media/YouTube-Icon-Full-Color-Logo.wine.d51475162e7c5e40f4daf744572f4aae.svg",
-    "main.dbac7405.css.map": "/react-gh-pages/static/css/main.dbac7405.css.map",
-    "main.94c15666.js.map": "/react-gh-pages/static/js/main.94c15666.js.map",
-    "787.b52f403a.chunk.js.map": "/react-gh-pages/static/js/787.b52f403a.chunk.js.map"
+    "main.css": "/portfolio-react-website/static/css/main.5686d5a6.css",
+    "main.js": "/portfolio-react-website/static/js/main.3127a048.js",
+    "static/js/787.b52f403a.chunk.js": "/portfolio-react-website/static/js/787.b52f403a.chunk.js",
+    "static/media/hotel_booking_website.png": "/portfolio-react-website/static/media/hotel_booking_website.cf0ea7c82dedc6d88d01.png",
+    "static/media/portfolio_website.png": "/portfolio-react-website/static/media/portfolio_website.ed131a735ebffea8b03a.png",
+    "static/media/background.jpg": "/portfolio-react-website/static/media/background.8ad5249c15c68a5ed634.jpg",
+    "static/media/genai_planner.png": "/portfolio-react-website/static/media/genai_planner.0a9651e4e931b9f949bc.png",
+    "static/media/seq_model.png": "/portfolio-react-website/static/media/seq_model.da16fda04826c2985056.png",
+    "static/media/aboutme_pic.jpg": "/portfolio-react-website/static/media/aboutme_pic.0604a241828f1be534bb.jpg",
+    "static/media/the-little-things-in-life.png": "/portfolio-react-website/static/media/the-little-things-in-life.9e1b56df6d2cb46bba0d.png",
+    "static/media/cookit.png": "/portfolio-react-website/static/media/cookit.9c38be72114995efafd0.png",
+    "static/media/OccupEYE.png": "/portfolio-react-website/static/media/OccupEYE.5da06a47751706a6c9da.png",
+    "static/media/flickr-icon.svg": "/portfolio-react-website/static/media/flickr-icon.5c97742ec96c813125a01509eabb65bb.svg",
+    "index.html": "/portfolio-react-website/index.html",
+    "static/media/YouTube-Icon-Full-Color-Logo.wine.svg": "/portfolio-react-website/static/media/YouTube-Icon-Full-Color-Logo.wine.d51475162e7c5e40f4daf744572f4aae.svg",
+    "main.5686d5a6.css.map": "/portfolio-react-website/static/css/main.5686d5a6.css.map",
+    "main.3127a048.js.map": "/portfolio-react-website/static/js/main.3127a048.js.map",
+    "787.b52f403a.chunk.js.map": "/portfolio-react-website/static/js/787.b52f403a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbac7405.css",
-    "static/js/main.94c15666.js"
+    "static/css/main.5686d5a6.css",
+    "static/js/main.3127a048.js"
   ]
 }

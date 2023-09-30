@@ -43,7 +43,7 @@ export default function Projects({ projectsRef }) {
                   <TimelineOppositeContent>
                     <div className="project-container flex flex-col rounded-[14px] p-6 content-center bg-white gap-3 text-left">
                       <img
-                        className="rounded-lg"
+                        className="rounded-lg h-[195px]"
                         src={project.img}
                         alt={project.alt}
                       />
