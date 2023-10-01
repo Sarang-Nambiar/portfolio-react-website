@@ -11,7 +11,7 @@ export default function AboutMe({ aboutRef }) {
       <div className="about-me flex flex-col gap-4" ref={aboutRef}>
         <Header headerName="About Me" />
         <img
-          className="profile-pic w-[240px] h-[240px] rounded-full"
+          className="profile-pic w-[240px] h-[240px] rounded-full mx-auto"
           src={pfp}
           alt="profile pic"
         />

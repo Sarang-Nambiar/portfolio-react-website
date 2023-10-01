@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import "../Stylesheets/Navbar.css";
 import Drawer from "./Drawer";
+import PersonIcon from '@mui/icons-material/Person';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import EmailIcon from '@mui/icons-material/Email';
 export default function Navbar({ aboutRef, projectsRef, contactRef }) {
   const [isSmall, setIsSmall] = useState(window.innerWidth < 640);
   const [isDark, setIsDark] = useState(false);
@@ -9,14 +12,17 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
     {
       name: "About",
       ref: aboutRef,
+      icon: <PersonIcon/>
     },
     {
       name: "Projects",
       ref: projectsRef,
+      icon: <LightbulbIcon/>
     },
     {
       name: "Contact",
       ref: contactRef,
+      icon: <EmailIcon/>
     },
   ];
 
@@ -58,13 +64,13 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
     <>
       <div
         id="navbar"
-        class={`fixed w-full flex flex-row justify-between pl-8 pr-8 pt-3 pb-4 ${
+        class={`fixed w-full flex flex-row justify-between pl-8 pr-8 pt-3 pb-4 items-center ${
           isDark
-            ? "bg-black bg-opacity-50 backdrop backdrop-blur-md text-white outline outline-white outline-1"
+            ? "bg-black bg-opacity-50 backdrop-blur-md text-white outline outline-white outline-1"
             : ""
         }`}
       >
-        <div className="logo font-bold">Sarang</div>
+        <div className="logo font-bold sm:text-base text-lg">Sarang</div>
         {isSmall ?  <Drawer links={links} scrollTo={scrollToRef} isDark={isDark}/> :
           <ul className="links flex flex-row gap-8 cursor-pointer">
             {links.map((link) => {

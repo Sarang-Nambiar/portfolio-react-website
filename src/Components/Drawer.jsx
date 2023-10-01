@@ -7,9 +7,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
+import "../Stylesheets/Drawer.css"
 
 export default function Drawer(props) {
   const anchor = "right";
@@ -37,11 +36,11 @@ export default function Drawer(props) {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {props.links.map((link, index) => (
+        {props.links.map((link) => (
           <ListItem key={link.name} disablePadding onClick={() => props.scrollTo(link.ref)}>
             <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              <ListItemIcon sx={{color:"white"}}>
+                {link.icon}
               </ListItemIcon>
               <ListItemText primary={link.name} />
             </ListItemButton>
@@ -50,7 +49,6 @@ export default function Drawer(props) {
       </List>
     </Box>
   );
-
   return (
     <div>
       <React.Fragment key={anchor}>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../Stylesheets/Projects.css";
 import { projects } from "../constants";
 import {
   Timeline,
