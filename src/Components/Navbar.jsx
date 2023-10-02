@@ -70,9 +70,9 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
             : ""
         }`}
       >
-        <div className="logo font-bold sm:text-base text-lg">Sarang</div>
+        <div className="logo font-bold text-lg">Sarang</div>
         {isSmall ?  <Drawer links={links} scrollTo={scrollToRef} isDark={isDark}/> :
-          <ul className="links flex flex-row gap-8 cursor-pointer">
+          <ul className="links flex flex-row gap-8 cursor-pointer text-lg">
             {links.map((link) => {
               return <li onClick={() => scrollToRef(link.ref)}>{link.name}</li>
             })}
