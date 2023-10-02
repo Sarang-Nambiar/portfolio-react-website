@@ -8,7 +8,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
-import "../Stylesheets/Drawer.css"
 
 export default function Drawer(props) {
   const anchor = "right";
@@ -56,11 +55,18 @@ export default function Drawer(props) {
           <MenuIcon sx={{ color: props.isDark ? "white" : "black" }} />
         </Button>
         <SwipeableDrawer
+          PaperProps={{
+            sx:{
+              backgroundColor:"rgba(0, 0, 0, 0.5)",
+              backdropFilter:"blur(10px)",
+              color:"white",
+              borderLeft:"1px solid white"
+            }
+          }}
           anchor={anchor}
           open={state}
           onClose={toggleDrawer(false)}
           onOpen={toggleDrawer(true)}
-          className="bg-opacity-50 backdrop backdrop-blur-sm transition-colors"
         >
           {list()}
         </SwipeableDrawer>
