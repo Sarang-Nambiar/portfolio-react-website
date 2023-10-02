@@ -21,7 +21,7 @@ This is my personal portfolio website built using React.js and styled with Tailw
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-portfolio-repo.git](https://github.com/Sarang-Nambiar/portfolio-react-website.git
+git clone https://github.com/Sarang-Nambiar/portfolio-react-website.git
 ```
 2. Navigate into the directory:
 ```bash
