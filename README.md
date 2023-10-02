@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built using React.js and styled with Tailwind CSS. The site showcases my skills, projects, and experience in the tech industry.
 
-![Portfolio Screenshot]<img width="944" alt="portfolio_website" src="https://github.com/Sarang-Nambiar/portfolio-react-website/assets/101126190/5f14f13a-e6ad-4f89-bfd2-7f2021100c1b">
+<img width="944" alt="portfolio_website" src="https://github.com/Sarang-Nambiar/portfolio-react-website/assets/101126190/5f14f13a-e6ad-4f89-bfd2-7f2021100c1b">
 
 ## Features
 
