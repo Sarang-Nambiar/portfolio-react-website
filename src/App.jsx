@@ -64,7 +64,7 @@ function App() {
                 onInit={(typewriter) => {
                   typewriter
                     .typeString("I'm Sarang, an aspiring AI Software Developer")
-                    .pauseFor(2000)
+                    .pauseFor(1000)
                     .deleteAll()
                     .typeString(
                       "Looking for Summer Internship positions in 2024!"
@@ -73,6 +73,8 @@ function App() {
                     .start();
                 }}
                 options={{
+                  delay: 50,
+                  deleteSpeed: 50,
                   autoStart: true,
                   loop: true,
                 }}

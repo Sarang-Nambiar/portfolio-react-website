@@ -60,7 +60,7 @@ export default function Drawer(props) {
               backgroundColor:"rgba(0, 0, 0, 0.5)",
               backdropFilter:"blur(10px)",
               color:"white",
-              borderLeft:"1px solid white"
+              boxShadow:"0px 0px 10px 0px rgba(0,0,0,0.75)",
             }
           }}
           anchor={anchor}

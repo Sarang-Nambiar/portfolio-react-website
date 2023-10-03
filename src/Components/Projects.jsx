@@ -18,18 +18,18 @@ import youtube_icon from "../assets/YouTube-Icon-Full-Color-Logo.wine.svg";
 export default function Projects({ projectsRef }) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const handleResize = () => {
-    if(window.innerWidth < 640){
-        setIsSmallScreen(true);
-    }else{
+    if (window.innerWidth < 640) {
+      setIsSmallScreen(true);
+    } else {
       setIsSmallScreen(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
     };
-  }
-    useEffect(() => {
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      }
-    })
+  });
   return (
     <>
       <div className="projects flex flex-col gap-4" ref={projectsRef}>
@@ -41,11 +41,13 @@ export default function Projects({ projectsRef }) {
                 <TimelineItem key={index} className="mb-2">
                   <TimelineOppositeContent>
                     <div className="project-container flex flex-col rounded-[14px] p-6 content-center bg-white gap-3 text-left">
-                      <img
-                        className="rounded-lg h-[195px]"
-                        src={project.img}
-                        alt={project.alt}
-                      />
+                      <div className="image-container w-full h-[250px] rounded-lg">
+                        <img
+                          className="object-cover w-full h-full rounded-lg"
+                          src={project.img}
+                          alt={project.alt}
+                        />
+                      </div>
                       <span className="project-title font-bold">
                         {project.name}
                       </span>

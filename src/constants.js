@@ -85,20 +85,6 @@ const projects = [{
   link: "https://github.com/Sarang-Nambiar/Sequence_Training_Model"
 },
 {
-  name: "The Little Things in Life - Empathy Game",
-  description: `By shedding light on the harsh realities
-  of poverty, "The Little Things in Life" aims to evoke empathy and compassion
-  from its players, compelling them to reflect on the significance of cherishing
-  life's modest blessings. As players delve deeper into the boy's world, they
-  embark on an emotional journey that fosters a deeper appreciation for the small
-  wonders that can profoundly impact lives. My team and I used <strong>React</strong> to build this game.`,
-  img: empathy_game,
-  alt: "project 3",
-  stack: ["React", "HTML", "CSS", "JavaScript"],
-  date: "Jul 2023 - Aug 2023",
-  link: "https://github.com/Sarang-Nambiar/empathygame.github.io"
-},
-{
   name: "Travel Planner Using Generative AI",
   description: `An innovative travel planner Web-App that utilizes <strong>generative AI</strong> technology to generate personalized itineraries that cater to your specific preferences. 
   By simply answering a few questions, our intelligent algorithm generates multiple customized plans. Our developed app for Singapore Airlines in the Singapore Airlines AppChallenge 2023, 
@@ -135,6 +121,20 @@ const projects = [{
   stack: ["Android Studio", "Java", "Spoonacular API", "Figma"],
   date: "May 2022",
   link: "https://github.com/Sarang-Nambiar/CooKit-TikTok-Youth-Camp-"
+},
+{
+  name: "The Little Things in Life - Empathy Game",
+  description: `By shedding light on the harsh realities
+  of poverty, "The Little Things in Life" aims to evoke empathy and compassion
+  from its players, compelling them to reflect on the significance of cherishing
+  life's modest blessings. As players delve deeper into the boy's world, they
+  embark on an emotional journey that fosters a deeper appreciation for the small
+  wonders that can profoundly impact lives. My team and I used <strong>React</strong> to build this game.`,
+  img: empathy_game,
+  alt: "project 3",
+  stack: ["React", "HTML", "CSS", "JavaScript"],
+  date: "Jul 2023 - Aug 2023",
+  link: "https://github.com/Sarang-Nambiar/empathygame.github.io"
 },
 ]
 
