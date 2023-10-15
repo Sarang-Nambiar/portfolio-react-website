@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react-website/static/css/main.b4bcd05e.css",
-    "main.js": "/portfolio-react-website/static/js/main.d11ab216.js",
+    "main.css": "/portfolio-react-website/static/css/main.b27a1f01.css",
+    "main.js": "/portfolio-react-website/static/js/main.4590bd54.js",
     "static/js/787.b52f403a.chunk.js": "/portfolio-react-website/static/js/787.b52f403a.chunk.js",
     "static/media/hotel_booking_website.png": "/portfolio-react-website/static/media/hotel_booking_website.cf0ea7c82dedc6d88d01.png",
     "static/media/portfolio_website.png": "/portfolio-react-website/static/media/portfolio_website.ed131a735ebffea8b03a.png",
@@ -15,12 +15,12 @@
     "static/media/flickr-icon.svg": "/portfolio-react-website/static/media/flickr-icon.5c97742ec96c813125a01509eabb65bb.svg",
     "index.html": "/portfolio-react-website/index.html",
     "static/media/YouTube-Icon-Full-Color-Logo.wine.svg": "/portfolio-react-website/static/media/YouTube-Icon-Full-Color-Logo.wine.d51475162e7c5e40f4daf744572f4aae.svg",
-    "main.b4bcd05e.css.map": "/portfolio-react-website/static/css/main.b4bcd05e.css.map",
-    "main.d11ab216.js.map": "/portfolio-react-website/static/js/main.d11ab216.js.map",
+    "main.b27a1f01.css.map": "/portfolio-react-website/static/css/main.b27a1f01.css.map",
+    "main.4590bd54.js.map": "/portfolio-react-website/static/js/main.4590bd54.js.map",
     "787.b52f403a.chunk.js.map": "/portfolio-react-website/static/js/787.b52f403a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4bcd05e.css",
-    "static/js/main.d11ab216.js"
+    "static/css/main.b27a1f01.css",
+    "static/js/main.4590bd54.js"
   ]
 }
