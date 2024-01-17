@@ -14,8 +14,9 @@ import Card from "./Card";
 import parse from "html-react-parser";
 import github_logo from "../assets/icons8-github-48 (1).png";
 import youtube_icon from "../assets/YouTube-Icon-Full-Color-Logo.wine.svg";
+import "../Stylesheets/Projects.css";
 
-export default function Projects({ projectsRef }) {
+export default function Projects({ projectsRef, setViewPic }) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const handleResize = () => {
     if (window.innerWidth < 640) {
@@ -43,9 +44,10 @@ export default function Projects({ projectsRef }) {
                     <div className="project-container flex flex-col rounded-[14px] p-6 content-center bg-white gap-3 text-left">
                       <div className="image-container w-full h-[250px] rounded-lg">
                         <img
-                          className="object-cover w-full h-full rounded-lg"
+                          className="project-img object-cover w-full h-full rounded-lg"
                           src={project.img}
                           alt={project.alt}
+                          onClick={() => setViewPic(project.img)}
                         />
                       </div>
                       <span className="project-title font-bold">

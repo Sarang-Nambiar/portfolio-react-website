@@ -9,9 +9,14 @@ import Contact from "./Components/Contact";
 import TypewriterComponent from "typewriter-effect";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
+import { ToastContainer } from "react-toastify";
+import PicViewer from "./Components/PicViewer";
 
 function App() {
   const [scroll, setScroll] = useState(0);
+  const [load, setLoad] = useState(false);
+  const [viewPic, setViewPic] = useState(null);
+
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -43,12 +48,16 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={`App overflow-x-hidden ${load ? "":"hidden"}`}>
+      {viewPic && 
+      <PicViewer viewPic={viewPic} setViewPic={setViewPic}/>}
+      <ToastContainer className="toast-position !top-[70px]" />
       <img
         src={bg}
         className="background bg-cover fixed w-full h-full -z-10"
         alt="portfolio background"
         style={{ filter: `blur(${scroll / 200}px)` }}
+        onLoad={() => setLoad(true)}
       />
       <Navbar
         aboutRef={aboutRef}
@@ -86,13 +95,18 @@ function App() {
       <div className="container relative flex flex-col m-auto xl:max-w-[60%] md:max-w-[80%] max-w-[90%] rounded-[14px] pt-12 pb-12 xl:pr-[6.25rem] xl:pl-[6.25rem] lg:pr-[3rem] lg:pl-[3rem] md:pr-[1.5rem] md:pl-[1.5rem] gap-8 opacity-90 justify-center bg-[#DFDFDF]">
         <Reveal keyframes={fadeInUp} triggerOnce>
           <AboutMe aboutRef={aboutRef} />
-          <Projects projectsRef={projectsRef} />
+          <Projects projectsRef={projectsRef} setViewPic={setViewPic}/>
           <Contact contactRef={contactRef} />
         </Reveal>
       </div>
       <div className="footer text-gray-300 pt-4 pb-4 text-xs">
         <p>&copy; 2023 Sarang Nambiar</p>
-        <p>Background photo by Sarang Nambiar, as featured on <a href="https://flic.kr/p/2oMnaeS" className="underline">Flickr</a></p>
+        <p>
+          Background photo by Sarang Nambiar, as featured on{" "}
+          <a href="https://flic.kr/p/2oMnaeS" className="underline">
+            Flickr
+          </a>
+        </p>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 export default function Navbar({ aboutRef, projectsRef, contactRef }) {
   const [isSmall, setIsSmall] = useState(window.innerWidth < 640);
   const [isDark, setIsDark] = useState(false);
+  const [progressWidth, setProgressWidth] = useState(0);
 
   const links = [
     {
@@ -41,6 +42,12 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
     } else {
       setIsDark(false);
     }
+
+    // progress bar logic
+    const pageHeight = document.body.scrollHeight - window.innerHeight;
+    progressWidth !== (window.scrollY) / pageHeight &&
+      setProgressWidth((window.scrollY) / pageHeight);
+    console.log(progressWidth);
   };
 
   const handleResize = () => {
@@ -61,12 +68,12 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
   });
 
   return (
-    <>
+    <div className="w-full fixed flex flex-col z-[100]">
       <div
         id="navbar"
-        class={`fixed w-full flex flex-row justify-between pl-8 pr-8 pt-3 pb-4 items-center ${
+        class={`flex flex-row justify-between pl-8 pr-8 pt-3 pb-4 items-center ${
           isDark
-            ? "bg-black bg-opacity-50 backdrop-blur-md text-white outline outline-white outline-1"
+            ? "bg-black bg-opacity-50 backdrop-blur-md text-white"
             : ""
         }`}
       >
@@ -79,6 +86,7 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
           </ul>
         }
       </div>
-    </>
+      <div className="progress-fill" style={{width:`${progressWidth * 100}%`}}/>    
+    </div>
   );
 }

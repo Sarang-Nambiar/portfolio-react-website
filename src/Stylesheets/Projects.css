@@ -1,0 +1,10 @@
+.project-img{
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.9;
+}
+.project-img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
